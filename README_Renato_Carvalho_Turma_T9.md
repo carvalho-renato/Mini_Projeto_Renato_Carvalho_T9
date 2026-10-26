@@ -60,3 +60,11 @@ Sprint 3 — Limpeza de nulos e duplicatas
 Validação da regra do identificador de compra (CO_ID): registros vazios separados.
 Remoção de datas corrompidas e de linhas duplicadas.
 Geração do arquivo df_limpo.csv com a base tratada.
+
+---
+
+Sprint 4 — Estatística descritiva
+Medidas calculadas para CL_FHL: contagem, média, mediana, moda, desvio
+padrão, variância, mínimo, máximo, amplitude, Q1, Q2, Q3 e coeficiente de variação.
+Distribuição de frequência e média de filhos por cliente único.
+Exportação para estatisticas_filhos.xlsx.
