@@ -43,3 +43,20 @@ python estatistica_dados.py     # Etapa 4 - estatística descritiva
 python agrupamento_dados.py     # Etapa 5 - agrupamentos
 python main.py                  # menu + relatório final
 
+
+**Diário de bordo**
+
+---
+
+Sprint 2 — Transformação de tipos
+limpar_texto_regex(): remove caracteres especiais e espaços duplicados com re.sub.
+atribuir_categoria(): regra com if/else que preenche categorias vazias com Sem Categoria.
+CL_FHL convertida para inteiro com tratamento de nulos pela mediana.
+DATA convertida para datetime com pd.to_datetime(format="%d/%m/%Y").
+
+---
+
+Sprint 3 — Limpeza de nulos e duplicatas
+Validação da regra do identificador de compra (CO_ID): registros vazios separados.
+Remoção de datas corrompidas e de linhas duplicadas.
+Geração do arquivo df_limpo.csv com a base tratada.
