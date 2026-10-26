@@ -75,3 +75,42 @@ Sprint 5 — Agrupamentos e relatório
 Agrupamentos com groupby() por gênero, categoria, segmento e mês.
 pivot_table() cruzando categoria do produto com gênero do cliente.
 Relatório final no terminal com contadores e bloco de conclusões.
+
+---
+
+Sprint 6 — Versionamento
+Repositório público no GitHub com commits progressivos por sprint.
+README com reflexão teórica sobre ETL e qualidade de dados.
+
+---
+
+**Reflexão teórica: ETL e qualidade de dados**
+ETL (Extract, Transform, Load) é o processo de extrair dados de uma origem,
+transformá-los em informação confiável e carregá-los em um destino. Neste
+projeto: a extração usa pandas.read_csv; a transformação concentra a limpeza
+de textos com regex, a conversão de tipos e o tratamento de nulos e duplicatas;
+e o carregamento grava o df_limpo.csv.
+
+Qualidade de dados é o grau em que a base é adequada ao uso pretendido.
+Os problemas encontrados foram classificados em:
+
+Completude: valores ausentes nas colunas.
+Unicidade: 96.553 linhas duplicadas.
+Validade: datas fora do padrão dd/mm/aaaa.
+Consistência: colunas extras geradas pelos ; no fim das linhas.
+Cada tratamento foi justificado: registros sem identificador ou data foram
+removidos por não serem rastreáveis; CL_FHL foi preenchida com a mediana por
+ser robusta a valores extremos; e categorias vazias receberam o rótulo
+Sem Categoria para não descartar a linha nem inventar informação.
+
+**Principais insights**
+A base original tem 830.000 registros; após a remoção de duplicatas restaram
+733.447 registros únicos.
+Não havia nulos nas colunas reais, mas a rotina de limpeza trata nulos de
+forma completa, ficando robusta a alterações na base.
+A maior parte das compras é realizada por clientes do gênero feminino.
+As categorias de produto apresentam volumes muito distintos entre si.
+As compras se distribuem de forma relativamente estável ao longo do período.
+Problema remanescente: remover duplicatas pode apagar o mesmo produto
+comprado duas vezes na mesma compra. Se as repetições forem reais, usar
+Base_Varejo_original.csv.
