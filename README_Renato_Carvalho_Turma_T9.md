@@ -68,3 +68,10 @@ Medidas calculadas para CL_FHL: contagem, média, mediana, moda, desvio
 padrão, variância, mínimo, máximo, amplitude, Q1, Q2, Q3 e coeficiente de variação.
 Distribuição de frequência e média de filhos por cliente único.
 Exportação para estatisticas_filhos.xlsx.
+
+---
+
+Sprint 5 — Agrupamentos e relatório
+Agrupamentos com groupby() por gênero, categoria, segmento e mês.
+pivot_table() cruzando categoria do produto com gênero do cliente.
+Relatório final no terminal com contadores e bloco de conclusões.
